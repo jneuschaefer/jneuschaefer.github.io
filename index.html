@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Jonas Neuschäfer</title>
+  <meta name="description" content="Jonas Neuschäfer – Projects, course work, thesis."/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+
+  <style>
+    :root { color-scheme: light; }
+
+    body{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+      color: #111;
+    }
+
+    header{
+      background:#333;
+      color:#fff;
+      padding: 18px 12px;
+      text-align:center;
+    }
+
+    nav{
+      background:#444;
+      padding: 10px 12px;
+      position: sticky;
+      top: 0;
+    }
+
+    nav .nav-inner{
+      max-width: 900px;
+      margin: 0 auto;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    nav a{
+      color:#fff;
+      text-decoration:none;
+      font-size:16px;
+      padding: 6px 10px;
+      border-radius: 6px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    nav a:hover{ background:#555; }
+
+    .container{
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 22px 14px 40px;
+    }
+
+    section{
+      background:#fff;
+      border-radius: 10px;
+      padding: 18px 18px;
+      margin: 16px 0;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+    }
+
+    h2{ margin-top: 0; }
+
+    .muted{ color:#444; }
+
+    .link-row{
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    footer{
+      background:#333;
+      color:#fff;
+      padding: 18px 12px;
+      margin-top: 30px;
+    }
+
+    footer .footer-inner{
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    footer a{
+      color:#fff;
+      text-decoration: underline;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* small icon alignment */
+    i.fab, i.fas{
+      width: 18px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Jonas Neuschäfer</h1>
+    <div class="muted" style="color:#ddd;">Projects · Course Work · Thesis</div>
+  </header>
+
+  <nav aria-label="Primary">
+    <div class="nav-inner">
+      <a href="#home">Home</a>
+      <a href="statistics-tutorial.html">Statistics Tutorial</a>
+
+      <a href="https://github.com/jneuschaefer" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-github" aria-hidden="true"></i>
+        GitHub
+      </a>
+
+      <a href="https://www.linkedin.com/in/jonas-neusch%C3%A4fer-788452341/en" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-linkedin" aria-hidden="true"></i>
+        LinkedIn
+      </a>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="home">
+      <h2>Home</h2>
+      <p>
+        Welcome to this webpage. It serves as an overview of the coursework and assignment submissions completed during my studies in Bonn, as well as materials and information related to the statistics tutorial.
+    </section>
+
+    <section id="projects">
+      <h2>Current Projects</h2>
+
+      <h3>Course Project (Advanced Machine Learning, Polytechnique/ENSAE)</h3>
+      <p>
+        Final project for the course Advanced Machine Learning at Inst. Polytechnique. The objective is to improve the adversarial robustness of convolutional neural networks in a medical image classification task (pneumonia detection from chest X-ray images). This is achieved by incorporating adversarial examples generated via the Fast Gradient Sign Method (FGSM) and Projected Gradient Descent (PGD) into the training process.
+      </p>
+    </section>
+
+    <section id="thesis">
+      <h2>Thesis</h2>
+
+      <h3>A Reinforcement Learning Algorithm for Risk-Sensitive Control in Finance</h3>
+      <p>
+        This work investigates how risk sensitivity can be integrated into reinforcement learning for sequential decision problems.
+
+      <ul>
+        <li><strong>Status:</strong> In progress</li>
+        <li><strong>Supervisor:</strong> Dr. Daniel Oeltz</li>
+      </ul>
+
+      <p class="muted">
+        You can find the current status of the work <a href="https://github.com/jneuschaefer/Reinforcement-Learning">here</a>.
+      </p>
+    </section>
+
+    <section id="thesis">
+      <h2>Exercise sheets (programming)</h2>
+      <ul>
+        <li><a href="https://github.com/jneuschaefer/Algorithmic-math_I"><strong>Algorithmische Mathematik I</strong></a>
+        <li><a href="https://github.com/jneuschaefer/Algorithmic-math_II"><strong>Algorithmische Mathematik II</strong></a>
+        <li><a href="https://github.com/jneuschaefer/numerics"><strong>Numerik</strong></a>
+        <li><a href="https://github.com/jneuschaefer/ML-intern_Bonn"><strong>Machine Learning</strong></a>
+        <li><a href="https://github.com/jneuschaefer/Computational_statistics"><strong>Computational Statistics</strong></a>
+      </ul>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="footer-inner">
+      <h2>Contact</h2>
+      <div class="link-row" style="justify-content:center;">
+        <a href="https://github.com/jneuschaefer" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          github.com/jneuschaefer
+        </a>
+
+        <span style="color:#aaa;">·</span>
+
+        <a href="mailto:jneuschaefer@uni-bonn.de">
+  <i class="fas fa-envelope" aria-hidden="true"></i>
+  jneuschaefer@uni-bonn.de
+</a>
+
+        <span style="color:#aaa;">·</span>
+
+        <a href="https://www.linkedin.com/in/jonas-neusch%C3%A4fer-788452341/en" target="_blank" rel="noopener noreferrer">
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+          Jonas Neuschäfer
+        </a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
